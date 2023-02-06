@@ -2,3 +2,15 @@
   display: flex;
   flex-direction: column;
 }
+.sideMenu {
+  width: 20%;
+  background-color: lightgreen;
+}
+.body {
+  width: 80%;
+  background-color: lightblue;
+}
+.current-html {
+  display: flex;
+  min-height: 95vh;
+}

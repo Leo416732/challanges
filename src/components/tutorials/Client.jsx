@@ -1,10 +1,10 @@
 import { Outlet, useNavigate, useParams } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "./Navbar";
 
 export default function Client() {
   return (
     <>
-      <Header />
+      <Navbar />
       <div>
         <Outlet />
       </div>

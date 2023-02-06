@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import "../styles/header.css";
+import "../../styles/header.css";
 
 export default function Header() {
   const navigate = useNavigate();
-  const [activeBtn, setActiveBtn] = useState("home");
+  const [activeBtn, setActiveBtn] = useState("");
   return (
     <header>
       <nav>
@@ -18,7 +18,7 @@ export default function Header() {
         <button
           className={activeBtn === "html" ? "active-button" : "disable-button"}
           onClick={() => {
-            navigate("/html/default"), setActiveBtn("html");
+            navigate("/tutorials/html"), setActiveBtn("html");
           }}
         >
           Html
@@ -26,7 +26,7 @@ export default function Header() {
         <button
           className={activeBtn === "css" ? "active-button" : "disable-button"}
           onClick={() => {
-            navigate("/css/default"), setActiveBtn("css");
+            navigate("/tutorials/css"), setActiveBtn("css");
           }}
         >
           Css
@@ -34,7 +34,7 @@ export default function Header() {
         <button
           className={activeBtn === "JS" ? "active-button" : "disable-button"}
           onClick={() => {
-            navigate("/javascript/default"), setActiveBtn("JS");
+            navigate("/tutorials/javascript"), setActiveBtn("JS");
           }}
         >
           JavaScript
@@ -42,7 +42,7 @@ export default function Header() {
         <button
           className={activeBtn === "react" ? "active-button" : "disable-button"}
           onClick={() => {
-            navigate("/react/default"), setActiveBtn("react");
+            navigate("/tutorials/react"), setActiveBtn("react");
           }}
         >
           React

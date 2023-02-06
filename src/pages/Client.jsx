@@ -1,13 +1,13 @@
-import { useParams } from "react-router-dom";
-import Pagination from "../components/Pagination";
+import { Outlet, useNavigate, useParams } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function Client() {
-  const pageNum = useParams();
-  console.log("client", pageNum.id);
   return (
-    <div>
-      <div className="clientPage">{pageNum.id}</div>
-      <Pagination />
-    </div>
+    <>
+      <Header />
+      <div>
+        <Outlet />
+      </div>
+    </>
   );
 }

@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import PageBtn from "../pages/PageBtn";
-import "../styles/page.css";
+import PageBtn from "./PageBtn";
+import "../../styles/page.css";
 
 export default function Pagination() {
   const pageNum = useParams();
-  console.log(pageNum);
   const [currentPage, setCurrentPage] = useState(pageNum && Number(pageNum.id));
   useEffect(() => {
     setCurrentPage(pageNum && Number(pageNum.id));

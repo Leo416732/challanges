@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  background-color: #282a35;
+}
+header button {
+  border: none;
+  cursor: pointer;
+  background-color: #282a35;
+  color: #fff;
+  padding: 10px 15px 9px 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+header img {
+  padding: 5px 15px 10px 15px;
+}
+header .disable-button:hover {
+  background-color: #000;
+}
+header .active-button {
+  background-color: green;
+}

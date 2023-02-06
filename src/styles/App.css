@@ -4,3 +4,6 @@
 .clientPage {
   text-align: center;
 }
+.sideMenu {
+  display: block;
+}

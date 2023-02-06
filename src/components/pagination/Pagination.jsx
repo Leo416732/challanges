@@ -5,9 +5,11 @@ import "../../styles/page.css";
 
 export default function Pagination() {
   const pageNum = useParams();
-  const [currentPage, setCurrentPage] = useState(pageNum && Number(pageNum.id));
+  const [currentPage, setCurrentPage] = useState(
+    pageNum ? pageNum && Number(pageNum.id) : 1
+  );
   useEffect(() => {
-    setCurrentPage(pageNum && Number(pageNum.id));
+    setCurrentPage(pageNum ? pageNum && Number(pageNum.id) : 1);
   }, [pageNum]);
   const lastCount = 100;
   return (

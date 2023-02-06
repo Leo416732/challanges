@@ -12,6 +12,7 @@ import HtmlHome from "./components/tutorials/sub-html/HtmlHome";
 import ClientPage from "./components/tutorials/ClientPage";
 import Editors from "./components/tutorials/sub-html/Editors";
 import Element from "./components/tutorials/sub-html/Element";
+import Page from "./components/pagination/Page";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/pagination" />
+          <Route path="/page/:id" element={<Page />} />
           <Route path="/tutorials/" element={<Client />}>
             <Route index element={<ClientPage />} />
             <Route path="html/*" element={<Html />}>

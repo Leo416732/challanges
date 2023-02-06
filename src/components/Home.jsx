@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <h1>Challanges</h1>
       <div>
-        <Link to={"/pagination"}>Pagination</Link>
+        <Link to={"/page/1"}>Pagination</Link>
       </div>
       <div>
         <Link to={"/tutorials"}>Tutorials</Link>

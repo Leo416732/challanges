@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Route, Routes, useParams } from "react-router-dom";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Client from "./components/tutorials/Client";
 import Css from "./components/tutorials/Css";
 import Home from "./components/Home";
@@ -13,6 +13,7 @@ import ClientPage from "./components/tutorials/ClientPage";
 import Editors from "./components/tutorials/sub-html/Editors";
 import Element from "./components/tutorials/sub-html/Element";
 import Page from "./components/pagination/Page";
+import Dogs from "./components/dogs/Dogs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/page/:id" element={<Page />} />
+          <Route path="/dogs" element={<Dogs />} />
           <Route path="/tutorials/" element={<Client />}>
             <Route index element={<ClientPage />} />
             <Route path="html/*" element={<Html />}>

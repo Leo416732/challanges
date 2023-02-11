@@ -5,6 +5,7 @@ import "./dogs.css";
 export default function Dogs() {
   const [dogbreeds, setDogBreeds] = useState([]);
   const [dogImage, setDogImage] = useState([]);
+  const [dogName, setDogName] = useState([]);
 
   useEffect(() => {
     axios
@@ -17,13 +18,14 @@ export default function Dogs() {
   }, []);
 
   function fetchIMage(dogimg) {
+    setDogName(dogimg);
     axios
       .get(`https://dog.ceo/api/breed/${dogimg}/images/random`)
       .then((data) => setDogImage(data.data.message));
   }
 
   return (
-    <>
+    <div className="dog-breeds">
       <header>
         <h1 className="logo">DoggoSelect</h1>
       </header>
@@ -43,9 +45,9 @@ export default function Dogs() {
           })}
         </select>
         <div className="card">
-          <img src={dogImage} alt="" onClick={() => location.reload()} />
+          <img src={dogImage} alt="" onClick={() => fetchIMage(dogName)} />
         </div>
       </div>
-    </>
+    </div>
   );
 }

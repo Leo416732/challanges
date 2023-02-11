@@ -4,22 +4,9 @@ html {
 body {
   margin: 0;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  /* 1 */
-  display: block;
+.home-svg {
+  color: #000;
 }
-
 /**
  * Add the correct display in IE 9-.
  */
@@ -158,28 +145,14 @@ sup {
   top: -0.5em;
 }
 
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10-.
- */
 img {
   border-style: none;
 }
 
-/**
- * Hide the overflow in IE.
- */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 code,
 kbd,
 pre,
@@ -197,10 +170,6 @@ figure {
   margin: 1em 40px;
 }
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -210,12 +179,6 @@ hr {
   /* 2 */
 }
 
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change font properties to `inherit` in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
 button,
 input,
 select,
@@ -382,33 +345,7 @@ textarea {
   /* 2 */
 }
 
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
+.dog-breeds .container {
   position: relative;
   width: 100%;
   max-width: 960px;
@@ -690,8 +627,8 @@ a:hover {
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button,
-button,
+.dog-breeds .button,
+. button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -714,13 +651,13 @@ input[type="button"] {
   box-sizing: border-box;
 }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
+.dog-breeds .button:hover,
+.dog-breeds button:hover,
+.dog-breeds input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.button:focus,
-button:focus,
+.dog-breeds .button:focus,
+.dog-breeds button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
@@ -739,8 +676,8 @@ input[type="button"].button-primary {
   border-color: #33c3f0;
 }
 
-.button.button-primary:hover,
-button.button-primary:hover,
+.dog-breeds .button.button-primary:hover,
+.dog-breeds button.button-primary:hover,
 input[type="submit"].button-primary:hover,
 input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover,
@@ -808,7 +745,7 @@ select:focus {
   outline: 0;
 }
 
-label,
+.dog-breeds label,
 legend {
   display: block;
   margin-bottom: 0.5rem;
@@ -829,137 +766,6 @@ label > .label-body {
   display: inline-block;
   margin-left: 0.5rem;
   font-weight: normal;
-}
-
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: circle inside;
-}
-
-ol {
-  list-style: decimal inside;
-}
-
-ol,
-ul {
-  padding-left: 0;
-  margin-top: 0;
-}
-
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%;
-}
-
-li {
-  margin-bottom: 1rem;
-}
-
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
-  padding: 0.2rem 0.5rem;
-  margin: 0 0.2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
-}
-
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre;
-}
-
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-
-th:last-child,
-td:last-child {
-  padding-right: 0;
-}
-
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: 1rem;
-}
-
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem;
-}
-
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 2.5rem;
-}
-
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.u-pull-right {
-  float: right;
-}
-
-.u-pull-left {
-  float: left;
-}
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #e1e1e1;
-}
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Self Clearing Goodness */
-.container:after,
-.row:after,
-.u-cf {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Media Queries
@@ -986,11 +792,11 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-img {
+.dog-breeds img {
   display: block;
   margin: auto;
 }
-
+/* 
 a {
   color: #bf6a91;
   text-decoration: none;
@@ -999,14 +805,14 @@ a:hover,
 a:active,
 a:focus {
   color: #ac4a77;
-}
+} */
 
-h1 {
+/* h1 {
   text-align: center;
   font-family: "Bree Serif", serif;
-}
+} */
 
-button {
+/* button {
   background-color: #bf6a91;
   border-color: #bf6a91;
   color: #fff;
@@ -1029,8 +835,8 @@ button[disabled="true"]:hover {
 }
 button.full {
   width: 100%;
-}
-button:hover,
+} */
+/* button:hover,
 button:active,
 button:focus {
   background-color: #ac4a77;
@@ -1040,15 +846,15 @@ button:focus {
 button[type="submit"] {
   display: block;
   margin: 0;
-}
+} */
 
-header {
+.dog-breeds header {
   background-color: #bf6a91;
   height: 60px;
   margin-bottom: 80px;
 }
 
-.logo {
+.dog-breeds .logo {
   color: #936616;
   margin: 0;
   font-size: 2.8rem;
@@ -1067,7 +873,7 @@ header {
   align-items: center;
 }
 
-.container {
+.dog-breeds .container {
   width: 100%;
   max-width: 860px;
   margin: 0 auto;
@@ -1122,4 +928,7 @@ select {
   color: white;
   margin-bottom: 2rem;
   border: solid 1px tomato;
+}
+#breeds {
+  width: 100%;
 }

@@ -14,6 +14,7 @@ import Editors from "./components/tutorials/sub-html/Editors";
 import Element from "./components/tutorials/sub-html/Element";
 import Page from "./components/pagination/Page";
 import Dogs from "./components/dogs/Dogs";
+import Weather from "./components/weather/Weather";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/page/:id" element={<Page />} />
           <Route path="/dogs" element={<Dogs />} />
+          <Route path="/weather" element={<Weather />} />
           <Route path="/tutorials/" element={<Client />}>
             <Route index element={<ClientPage />} />
             <Route path="html/*" element={<Html />}>

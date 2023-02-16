@@ -13,6 +13,9 @@ export default function Home() {
       <div>
         <Link to={"/tutorials"}>Tutorials</Link>
       </div>
+      <div>
+        <Link to={"/weather"}>Weather</Link>
+      </div>
     </>
   );
 }

@@ -7,3 +7,12 @@
 .sideMenu {
   display: block;
 }
+.light {
+  background-color: #fff;
+  color: #000;
+}
+/* nice dark mode color */
+.dark {
+  background-color: #242526;
+  color: rgb(172, 171, 171);
+}
